@@ -1,0 +1,293 @@
+.vh-100 {
+	min-height: 100vh;
+}
+.w-400 {
+	width: 100%;
+	height: 100vh;
+	padding-left:1rem;
+	padding-right:1rem;
+}
+.fs-xs {
+	font-size: 1rem;
+}
+.w-10 {
+	width: 10%;
+}
+a {
+	text-decoration: none;
+}
+.fs-big {
+	font-size: 5rem !important;
+}
+.online {
+	width: 10px;
+	height: 10px;
+	background: green;
+	border-radius: 50%;
+}
+.w-15 {
+	width: 15%;
+}
+.fs-sm {
+	font-size: 1.4rem;
+}
+small {
+	color: #bbb;
+	font-size: 0.7rem;
+	text-align: right;
+}
+.chat-box {
+	overflow-y: auto;
+	overflow-x: hidden;
+	max-height: 50vh;
+}
+.rtext {
+	width: 65%;
+	background: #f8f9fa;
+	color: #444;
+}
+
+.ltext {
+	width: 65%;
+	background: #6200EE;
+	color: #fff;
+}
+/* width */
+*::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+*::-webkit-scrollbar-thumb {
+  background: #aaa;
+}
+
+/* Handle on hover */
+*::-webkit-scrollbar-thumb:hover {
+  background: #3289c8;
+}
+
+textarea {
+	resize: none;
+}
+
+/*message_status*/
+
+body {
+	font-family: "Poppins", sans-serif;
+  }
+
+  /* Hide scrollbar for webkit browsers (Chrome, Safari) */
+  ::-webkit-scrollbar {
+	display: none;
+  }
+
+  /* Hide scrollbar for Firefox */
+  html {
+	scrollbar-width: none;
+  }
+
+
+  /* the navbar styles */
+  .navbar {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: #fff;
+	color: #fff;
+	padding: 22px 0;
+	text-align: center;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+	/* Added box-shadow */
+  }
+
+  .navbar a {
+	color: #fff;
+	text-decoration: none;
+	margin: 0 10px;
+	margin-bottom: 0.5rem;
+  }
+
+  .left-icon {
+	margin-left: 2.5rem;
+  }
+
+  .right-icon {
+	margin-right: 2.5rem;
+  }
+
+  /* Custom rounded box */
+  .rounded-box {
+	background-color: #6200EA;
+	border-radius: 10px;
+	padding: 20px;
+	color: #fff;
+	margin-bottom: 20px;
+	margin-top: -1rem;
+	box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+
+  }
+
+  .button-container {
+	display: flex;
+	align-items: center;
+  }
+
+
+  /* Added margin to the left of the button */
+  .button-container button {
+	margin-left: auto;
+  }
+
+
+  /* Minimalist search input styles */
+  .search-column {
+	background-color: #f2f2f2;
+	border-radius: 10px;
+	padding: 10px;
+	margin-top: 20px;
+	/* Added margin */
+  }
+
+  .search-input {
+	width: 100%;
+	padding: 10px 40px 10px 10px;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+	background-color: transparent;
+	color: #333;
+  }
+  #back-icon {
+	margin-top: 10px;
+	margin-left:0.5rem;
+  }
+  .fa-search{
+	color:#6200EA;
+  }
+  .btn-secondary{
+	background-color:#6200EA;
+  }
+  
+  .btn-secondary:focus{
+	outline: none !important;
+	box-shadow: none !important;
+	background-color:#6200EA;
+	color: #fff;
+  }
+  .form-control:focus{
+	outline: none;
+	box-shadow: none;
+	border: 1px solid #6200EE;
+  }
+  .form-control:active{
+	outline: none;
+	box-shadow: none;
+  }
+  .pic-container{
+	border-bottom: 2px solid #6200EE;
+  }
+  .chat-box{
+	max-height: 100vh; /* Adjust this value as needed */
+    overflow-y: auto;
+  }
+
+
+
+/* Style for the message input */
+.message-input {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.message-input textarea {
+    flex: 1;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+
+.message-input button {
+    border: none;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.message-input button:hover {
+    background-color:#6200EE;
+}
+.pic-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pic-container img {
+    margin-right: 10px;
+    border-radius: 50%; /* Assuming the image is circular */
+}
+
+/* Adjust the top padding of the chat container */
+.chat-container {
+    padding-top: 100px; /* Adjust this value to match the height of the pic-container */
+	height: 100vh;
+	padding-bottom: 10px; /* Adjust this value to leave space for the message input */
+    max-height: calc(110vh - 156px); /* Adjust this value according to the available space */
+    overflow-y: auto;
+
+}
+.input-group-prepend{
+	margin-right: 0.5rem;
+}
+.location-btn{
+	margin-right: 0.5rem;
+}
+.name-text{
+	text-transform: uppercase;
+	font-weight: 700;
+}
+a{
+	color: #6200EE;
+	text-transform: capitalize;
+}
+.btn:focus,
+.btn:active,
+.btb:hover{
+	outline: none !important;
+	box-shadow: none !important;
+	color: #444;
+}
+.btn-dark{
+	background-color: #6200EE;
+	border: none;
+}
+.chat-username{
+	text-transform: capitalize;
+}
+.ltext a {
+    color: #fff;
+}
+
+
