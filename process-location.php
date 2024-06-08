@@ -11,7 +11,7 @@ session_start();
 // Function to generate QR code with given data
 function generateQRCode($data) {
     $qr = new QRCode;
-    $qr->text($data);
+    $qr->text($data);//yguggyugyu
     $qr->render('qr/code.png'); // Save QR code image
 }
 
